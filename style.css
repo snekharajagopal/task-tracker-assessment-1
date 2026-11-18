@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+
+}
+#low{
+    color: yellow;
+}
+#medium{
+    color: green;
+}
+#high{
+    color: red;
+}
+button:hover{
+     color: #f26b21;
+     border-radius: 12px;
+}
+ul li:hover{
+    text-decoration: none;
+    color:#f26b21
+
+}
+.done{
+    text-decoration: line-through;
+    color: gray;
+}
+@media(max-width:600px){
+    .main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

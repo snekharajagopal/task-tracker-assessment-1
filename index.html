@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>task-tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Task Tracker</h1>
+    </header>
+    <main class="main">
+    <form id="tasks">
+      <label for="task">Enter Task</label>
+      <input type="text" id="task" name="task">
+      <label for="hours">Enter Hours</label>
+      <input type="number" id="hours" name="time" min="1" max="12" >
+      <select id="Priority">
+        <option value="">--select Priority</option>
+        <option  id="low" value="low">Low</option>
+        <option  id="medium" value="medium">Medium</option>
+        <option id="high" value="high">High</option>
+    
+      </select>
+      <label for="Priority">select your Priority</label>
+      <button id="btn">Add task</button>
+      <ul id="list"></ul>
+      <p id="#error"></p>
+      <p id="#stat"></p>
+      </form>
+    </main>
+    <footer>
+       &copy;task-tracker
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
